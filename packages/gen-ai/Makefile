@@ -33,7 +33,7 @@ dev-bff-mock: ## Run only the bff in development mode
 
 .PHONY: dev-bff
 dev-bff:
-	cd bff && LLAMA_STACK_URL=${LLAMA_STACK_URL} AUTH_TOKEN=user_token AUTH_TOKEN_HEADER=Authorization AUTH_TOKEN_PREFIX="Bearer " make run STATIC_ASSETS_DIR=../frontend/dist
+	cd bff && MAAS_URL=http://localhost:8081 DISTRIBUTION_NAME=quay.io/opendatahub/llama-stack:latest LLAMA_STACK_URL=${LLAMA_STACK_URL} AUTH_TOKEN=user_token AUTH_TOKEN_HEADER=Authorization AUTH_TOKEN_PREFIX="Bearer " make run STATIC_ASSETS_DIR=../frontend/dist
 
 
 .PHONY: dev-frontend
