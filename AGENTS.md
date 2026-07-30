@@ -146,5 +146,6 @@ Skills provide multi-step workflows. They live in `.claude/skills/`. Read the re
 | **Prototype Tickets**              | `skills/prototype-tickets/`            | Drafting Jira tickets from a UX prototype fork — splits by feature area, generates ACs from prototype scenarios |
 | **CI Flake Classifier**            | `skills/ci-flake-classifier/`          | Classifying PR CI failures as flaky or genuine — cross-PR recurrence, rerun detection, symptom matching (also used by preflight) |
 | **Coverage Boost**                 | `skills/coverage-boost/`               | Parsing coverage reports to find uncovered lines, then generating targeted unit tests to boost coverage for a package or file |
+| **Nightly E2E Triage**             | `skills/nightly-e2e-triage/`           | Analyzing nightly E2E test failures, mapping to scrum teams, and posting threaded Slack analysis (pass Slack thread URL or timestamp) |
 
 **Important**: Always read the relevant rule or skill file before starting the task to ensure you follow the project's conventions and patterns.
