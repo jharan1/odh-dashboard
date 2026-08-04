@@ -248,16 +248,16 @@ Slack contact: <handle/channel>
 
 ---
 Ready to post to #team-openshift-ai-dashboard thread?
-[Y] Post all  |  [E] Edit assignments  |  [S] Skip posting
+[Y] Post  |  [E] Edit assignments  |  [S] Skip posting
 ```
 
 Wait for the user to confirm or edit team assignments before posting.
 
-### Step 9: Post Slack messages
+### Step 9: Post Slack message
 
 Post threaded replies to the original nightly report message in `#team-openshift-ai-dashboard` (channel `C05SMJ09DD2`).
 
-**Post one message per team**, threaded on the original report message. Format:
+**Post one message in total with one section per team**, threaded on the original report message. Format:
 
 ```
 <TEAM_SLACK_HANDLE> — <N> failing test(s) in tonight's nightly run:
@@ -278,7 +278,7 @@ cc @Anthony Coughlin
 **Rules for posting:**
 - Always thread on the original report message (use `thread_ts`)
 - Always cc Anthony Coughlin in each message
-- Keep messages concise — one message per team, not per test
+- One message in total, with one section per team, not one message per team or per test
 - Include video links when available from the Jenkins report
 - If root cause analysis is available, include a brief summary
 - If a test's failure is confirmed as a known blocker already discussed in the thread, note it as `(known blocker — see above)`
