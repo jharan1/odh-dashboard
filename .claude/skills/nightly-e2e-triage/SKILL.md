@@ -192,7 +192,7 @@ Use this test-directory-to-area mapping:
 | `settings/` | `dashboard-area-cluster-settings` |
 | `storageClasses/` | `dashboard-area-storage-classes` |
 
-**Longest prefix wins**: `dataScienceProjects/workbenches/` matches `workbenches` (Razzmatazz), not `projects` (Monarch).
+**Longest prefix wins**: `dataScienceProjects/workbenches/` matches `workbenches` (Razzmatazz), not `projects` (Pewter).
 
 #### 6c: Map area to scrum team
 
@@ -200,12 +200,12 @@ Use the Area-to-Scrum Default Mapping from `jira-project-reference.md`:
 
 | Dashboard Area | Default Team |
 |---|---|
-| `dashboard-area-applications` | Monarch |
-| `dashboard-area-infrastructure` | Monarch |
-| `dashboard-area-home` | Monarch |
-| `dashboard-area-projects` | Monarch |
-| `dashboard-area-cluster-settings` | Monarch |
-| `dashboard-area-observability` | Monarch |
+| `dashboard-area-applications` | Pewter |
+| `dashboard-area-infrastructure` | Pewter |
+| `dashboard-area-home` | Pewter |
+| `dashboard-area-projects` | Pewter |
+| `dashboard-area-cluster-settings` | Pewter |
+| `dashboard-area-observability` | Pewter |
 | `dashboard-area-workbenches` | Razzmatazz |
 | `dashboard-area-pipelines` | Razzmatazz |
 | `dashboard-area-storage-classes` | Razzmatazz |
