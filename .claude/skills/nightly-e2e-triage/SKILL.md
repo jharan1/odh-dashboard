@@ -31,7 +31,7 @@ posted to #team-openshift-ai-dashboard.
 ## Prerequisites
 
 - **Slack MCP** (`slack-rh`) -- connected and authenticated. This skill uses the `slack-rh` MCP server for reading threads and posting messages. If the MCP is not connected, stop immediately with the error in the Error Handling section below.
-- **Jenkins report** -- the operator must be able to run the `dashboard-agentic-analysis` Jenkins job (VPN + credentials required) and supply the HTML report when prompted
+- **Jenkins report** -- the operator must be able to run the `dashboard-agentic-analysis` Jenkins job (VPN + credentials required) and supply the md or HTML report when prompted
 
 **IMPORTANT — No Slack messages without explicit approval.** This skill MUST NOT post any Slack messages (via `post_message` or any other Slack write tool) until the user has explicitly approved the content in Step 7. Always present the full analysis first and wait for a clear "yes" / "Y" / "post" confirmation. If the user says "skip", "no", or "edit", do NOT post. This is a hard rule — violating it sends unsanctioned messages to a team-wide channel.
 
@@ -113,7 +113,7 @@ I need the Jenkins agentic-analysis report for this build. Please:
 
 1. Go to: https://jenkins-csb-rhods-opendatascience.dno.corp.redhat.com/job/components/job/dashboard/job/dashboard-agentic-analysis/
 2. Run a new build with the build number from the nightly report: <BUILD_NUMBER>
-3. When the job completes, download the "TFA Analysis" HTML report
+3. When the job completes, download the "TFA Analysis" md or HTML report
 4. Share the file path or paste the report content here
 
 Note: This Jenkins instance requires VPN access and authentication.
@@ -121,7 +121,7 @@ Note: This Jenkins instance requires VPN access and authentication.
 
 Wait for the user to provide the report. Accept:
 - A local file path (read it with the Read tool)
-- Pasted HTML/text content
+- Pasted md or HTML or text content
 - A statement that they want to use the existing thread analysis instead
 
 **Capture the analysis link** for inclusion in the posted message. This may be:
