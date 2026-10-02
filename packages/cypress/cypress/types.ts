@@ -771,6 +771,17 @@ export type GenAiTestData = {
   servingRuntimesPath: string;
 };
 
+export type GenAiMaaSTestData = {
+  llmInferenceServiceFixturePath: string;
+  subscriptionFixturePath: string;
+  authPolicyFixturePath: string;
+  phase: string;
+  playgroundServiceName: string;
+  playgroundPodPrefix: string;
+  playgroundPodReadyTimeout: string;
+  testMessage: string;
+};
+
 export type GenAiTracingTestData = {
   modelId: string;
   modelType: string;
